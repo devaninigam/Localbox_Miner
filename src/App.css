@@ -1,38 +1,105 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
 .App {
+  text-align: center;
+  margin: 50px;
+}
+.input {
+  margin-bottom: 20px;
+}
+.input input, .input button {
+  padding: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s;
+}
+.input input:focus, .input button:focus {
+  outline: none;
+  border-color: #4CAF50;
+}
+table{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.input button {
+  background-color: #4CAF50;
   color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.input button:hover {
+  background-color: #45a049;
+}
+.map table {
+  width: 80%;
+  border-collapse: collapse;
+  margin: auto;
+}
+.map th, .map td {
+  border: 1px solid #ccc;
+  padding: 12px;
+}
+.map th {
+  background-color: #f2f2f2;
+}
+.map button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.map button:hover {
+  background-color: #45a049;
+}
+.map button.edit:hover {
+  filter: brightness(85%);
+}
+.map button.edit {
+  background-color: #2196F3;
+  transition: background-color 0.3s;
+  margin-right: 5px;
+}.map {
+  margin-top: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.row {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.box {
+  border: 1px solid #ccc;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.green {
+  background-color: lightgreen;
+  border-radius: 7px;
+  transition: all 0.5s; 
+}
+
+.red {
+  background-color: salmon;
+  border-radius: 18px;
+  margin: 5px;
+  padding: 10px;
+  transition: all 0.5s;
+}
+
+.col-3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+  padding: 0 15px; 
+}
+.mapBtn{
+  margin: 10px 10px 6px 180px ;
 }
